@@ -1,0 +1,33 @@
+Usage
+=====
+
+To integrate AdminXperience into your Django project, follow these steps:
+
+1. Add 'adminxperience' to the `INSTALLED_APPS` list in your Django project's settings.py file:
+
+   .. code-block:: python
+
+      INSTALLED_APPS = [
+          ...
+          'adminxperience',
+          ...
+      ]
+
+2. Customize the AdminXperience settings in your settings.py file if needed.
+
+3. Run migrations to apply any necessary changes to your database models:
+
+   .. code-block:: bash
+
+      python manage.py makemigrations
+      python manage.py migrate
+
+4. Start your Django development server:
+
+   .. code-block:: bash
+
+      python manage.py runserver
+
+5. Access the Django admin interface in your web browser, and you'll see the redesigned interface provided by AdminXperience.
+
+For more detailed usage instructions and customization options, please refer to the documentation.
