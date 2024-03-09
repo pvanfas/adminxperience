@@ -1,0 +1,37 @@
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+file = "LICENSE.txt"
+content-type = "text/plain"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | venv
+)/
+'''
+
+[tool.ruff]
+ignore = []
+line-length = 88
+select = ["B", "B9", "C", "E", "F", "W"]
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[build-system]
+requires = ['setuptools>=40.8.0']
+build-backend = 'setuptools.build_meta'
