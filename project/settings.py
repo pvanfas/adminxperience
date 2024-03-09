@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'adminxperience'
+    'adminxperience',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +122,20 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+STATIC_URL = "/static/"
+STATIC_FILE_ROOT = BASE_DIR / "static"
+STATICFILES_DIRS = ((BASE_DIR / "static"),)
+STATIC_ROOT = BASE_DIR / "assets"
+
+ADMINXPERIENCE_CONFIG = {
+    'site_title': 'AdminXperience',
+    'site_header': 'AdminXperience',
+    'index_title': 'Welcome to AdminXperience',
+    'theme': 'default',
+    'logo': '/static/adminxperience/img/logo.svg',
+    'favicon': '/static/adminxperience/img/favicon.png',
+    'background': '/static/adminxperience/img/background.jpg',
+}
