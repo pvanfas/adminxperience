@@ -1,0 +1,1 @@
+generate documentation and then `cd doc && make html`
