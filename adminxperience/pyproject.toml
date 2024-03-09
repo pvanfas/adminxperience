@@ -25,11 +25,11 @@ exclude = '''
 '''
 
 [tool.ruff]
-ignore = []
+lint.ignore = []
 line-length = 88
-select = ["B", "B9", "C", "E", "F", "W"]
+lint.select = ["B", "B9", "C", "E", "F", "W"]
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 10
 
 [build-system]
