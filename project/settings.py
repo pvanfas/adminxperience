@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'adminxperience',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'adminxperience',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +139,4 @@ ADMINXPERIENCE_CONFIG = {
     'favicon': '/static/adminxperience/img/favicon.png',
     'background': '/static/adminxperience/img/background.jpg',
 }
+TEMPLATES[0]['OPTIONS']['context_processors'].append('adminxperience.context_processors.main_context')
